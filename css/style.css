@@ -1,0 +1,212 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: rgb(10, 10, 10);
+    background:#e9e9e9;
+	width:100%;
+	max-width:1000px;
+	margin:auto;
+
+}
+
+
+header {
+	background:#9721a7;
+	width:100%;
+	padding:10px;	
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	position: fixed;
+	justify-content: space-between;
+	max-width:1000px;
+}
+
+header .header-img {
+	color:#fff;
+	font-size:30px;
+    
+	
+}
+
+header .header-img i {
+	width:40px;
+	
+}
+
+header .header-img a {
+	color:#fff;
+	text-decoration: none;
+	line-height:50px;
+}
+
+header nav {
+	width:55%;
+	
+	
+}
+
+header nav a {
+	background:#9721a7;
+	color:#fff;
+	text-align: center;
+	text-decoration: none;
+	padding:20px;	
+	flex-grow:1;
+	line-height:50px;
+}
+
+header nav a:hover {
+	background:#1a0452;
+	
+}
+p{
+    font-size: 18px;
+    text-align: center;
+}
+#welcome-section{
+
+    padding-top: 150px;
+    
+}
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    padding: 20px 0px;
+    
+}
+.grid{
+    
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 50px;
+        width: 100%;
+        
+        margin: 0 auto;
+        margin-bottom: 25px;
+    
+}
+
+img {
+  
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.project-title {
+    font-size: 22px;
+    padding: 25 15;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(10, 34, 34);
+}
+
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.9);
+	width: 100%;
+	height: 100vh;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.overlay.activo {
+	display: flex;
+}
+
+.overlay img {
+	max-width: 100%;
+}
+
+
+
+.contenedor-img {
+	position: relative;
+}
+.grid .img-contenido {
+	position: relative;
+    
+}
+
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 50px;
+	color: rgb(15, 15, 15);
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	
+}
+.contacto {
+    font-size: 20px;
+    
+    transition: transform 0.1s ease-out;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    header{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        
+        
+        
+    }
+    #welcome-section{
+
+        padding-top: 10px;
+        
+    }
+    .nav-link{
+     margin-left:50px
+
+        
+        
+    }
+    .header-img{
+        margin-top: 50px;
+    }
+    .overlay #btn-cerrar-popup {
+        background: none;
+        font-size: 30px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        position: absolute;
+        right: -px;
+        top: -25px;
+        
+    }
+    #contacto a{
+        white-space:normal
+    }
+}
